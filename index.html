@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>window.location.href = "landing.html";</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Halstead Templars RFC</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <section class="carousel">
+    <header class="overlay-header center-logo">
+      <div class="logo-container">
+        <img src="assets/logo.webp" alt="Halstead Templars Logo" class="logo" />
+        <h1 class="club-title">Halstead Templars RFC</h1>
+      </div>
+    </header>
+    <div class="slides">
+      <div class="slide active">
+        <img src="assets/banner1.jpg" alt="Slide 1">
+        <div class="shade-overlay"></div>
+      </div>
+      <div class="slide">
+        <img src="assets/banner2.jpg" alt="Slide 2">
+        <div class="shade-overlay"></div>
+      </div>
+      <div class="slide">
+        <img src="assets/banner3.jpg" alt="Slide 3">
+        <div class="shade-overlay"></div>
+      </div>
+      <div class="slide">
+        <img src="assets/banner4.jpg" alt="Slide 4">
+        <div class="shade-overlay"></div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="teams.html">Teams</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="lotto.html">Lotto</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="quick-links">
+    <div><a href="fixtures.html">Upcoming Fixtures</a></div>
+    <div><a href="news.html">Latest News</a></div>
+    <div><a href="teams.html">Meet the Teams</a></div>
+  </section>
+
+
+<!-- Social Navigation Bar -->
+<div class="social-bar">
+  <a href="https://www.facebook.com/HTRFC/" target="_blank"><img src="assets/icons/facebook-bw.svg" alt="Facebook"  /></a>
+  <a href="https://www.instagram.com/halsteadtemplars/" target="_blank"><img src="assets/icons/instagram.svg" alt="Instagram" /></a>
+  <a href="https://x.com/templarsrfc" target="_blank"><img src="assets/icons/x.png" alt="X" /></a>
+  <a href="https://www.tiktok.com/@halsteadtemplars" target="_blank"><img src="assets/icons/tiktok.svg" alt="TikTok" /></a>
+  <a href="https://bsky.app/profile/halsteadtemplars.bsky.social" target="_blank"><img src="assets/icons/bluesky.png" alt="BlueSky" /></a>
+</div>
+  <footer>
+    <p>&copy; 2025 Halstead Templars Rugby Club</p>
+    <div class="sponsor-section">
+      <h3>Our Sponsors</h3>
+      
+
+<div class="sponsor-logos" style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; align-items: center; justify-items: center; padding: 20px;">
+  <a href="https://www.currycottagehalstead.co.uk/" target="_blank">
+    <img src="assets/thumbnail_CC logo.png" alt="The Curry Cottage" />
+  </a>
+  <a href="https://www.colnevalleywines.co.uk/" target="_blank">
+    <img src="assets/thumbnail_CVW logo.jpg" alt="Colne Valley Wines" />
+  </a>
+  <a href="https://www.facebook.com/FellowesFarriery/" target="_blank">
+    <img src="assets/thumbnail_Ivan logo.png" alt="Fellowes Farriery" />
+  </a>
+  <a href="https://www.keystonelaw.com/" target="_blank">
+    <img src="assets/thumbnail_Keystone law logo.png" alt="Keystone Law" />
+  </a>
+  <a href="https://www.facebook.com/projectfit.uk" target="_blank">
+    <img src="assets/thumbnail_Project fit logo.png" alt="Project Fit" />
+  </a>
+  <a href="https://whitehartinnhalstead.co.uk/" target="_blank">
+    <img src="assets/thumbnail_White hart logo 2.png" alt="White Hart" />
+  </a>
+</div>
+
+
+    </div>
+  </footer>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showNextSlide() {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+
+    setInterval(showNextSlide, 4000);
+  </script>
+</body>
+</html>
