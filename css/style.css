@@ -1,0 +1,191 @@
+
+nav {
+  height: 100px;
+  line-height: 100px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: inline-block;
+  line-height: 100px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+.overlay-header.center-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 3;
+}
+
+.logo-container .logo {
+  max-height: 250px;
+}
+
+.club-title {
+  color: white;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.carousel {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.shade-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+.nav-bar {
+  padding: 2em 0;
+  background-color: #992d31;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+.nav-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-bar a:hover {
+  color: #ffcccc;
+}
+
+.quick-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 1em;
+  background: #e2e2e2;
+}
+
+.quick-links div {
+  padding: 1em;
+  background: white;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #992d31;
+  color: white;
+}
+
+footer .sponsor-section {
+  margin-top: 1em;
+}
+
+footer .sponsor-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 0.5em;
+  flex-wrap: wrap;
+}
+
+footer .sponsor-logos img {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+footer .sponsor-logos img:hover {
+  transform: scale(1.1);
+}
+
+
+.social-bar {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  gap: 30px;
+}
+
+.social-bar img {
+  height: 40px;
+  width: 40px;
+  filter: brightness(0) invert(1);
+}
+
+/* Sponsor logo white background styling */
+.sponsor-wrapper {
+  background: white;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 8px;
+  margin: 10px auto;
+  max-width: 300px;
+}
+.sponsor-wrapper img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
